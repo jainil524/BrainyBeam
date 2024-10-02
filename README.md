@@ -1,6 +1,3 @@
-Here’s an enhanced version of your **README.md** file with markdown elements like headings, lists, and images to make it more visually appealing. Since I cannot provide actual images here, I've added placeholders where you can add your project screenshots or GIFs.
-
-```markdown
 # 📝 Shared Input Component Library
 
 This project is a **React-based component library** that provides shared components for various input types such as **text**, **textarea**, **checkbox**, and **radio**. The library is designed for **reuse in forms**, promoting maintainable and scalable code.
@@ -137,35 +134,3 @@ export default ExampleForm;
 
 This project comes with a **modern and clean design**. You can customize the look and feel by editing the `Input.css` file to fit your design requirements.
 
-### Example Input UI:
-![Input Design Example](https://via.placeholder.com/800x400?text=Input+Design+Example)
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! If you have suggestions or improvements, feel free to:
-
-- Fork the repository
-- Create a new branch (`git checkout -b feature-branch`)
-- Commit your changes (`git commit -m 'Add some feature'`)
-- Push to the branch (`git push origin feature-branch`)
-- Open a pull request
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License**. Feel free to use it in your projects!
-
----
-
-### Key Sections:
-1. **Features**: Highlight the main features of the project.
-2. **Installation**: How to clone and set up the project.
-3. **Usage**: Example code on how to use the components.
-4. **Design & Customization**: Info on the UI and how it can be customized.
-5. **Contributing**: Details for anyone looking to contribute to the project.
-6. **License**: Mention the project license (e.g., MIT).
-
-This format ensures your project looks professional and gives users clear guidance on how to install, use, and contribute to it.
