@@ -16,11 +16,11 @@ The Theme Changer enhances usability by providing a sleek interface that accommo
 
 **Dark Mode:**
 
-![Dark Mode](path/to/dark-mode-screenshot.png)
+![Dark Mode](https://github.com/jainil524/BrainyBeam/blob/main/task3/ThemeChanger/public/img/darkTheme.jpg)
 
 **Light Mode:**
 
-![Light Mode](path/to/light-mode-screenshot.png)
+![Light Mode](https://github.com/jainil524/BrainyBeam/blob/main/task3/ThemeChanger/public/img/lightTheme.jpg)
 
 ## 🔧 Installation
 
