@@ -1,7 +1,3 @@
-Here’s an updated version of your README file with a section for demo UI images added. You can include images of the application interface in the provided space.
-
----
-
 # 📁 Image Upload with Progress & Alert System
 
 ## Tags
@@ -255,6 +251,3 @@ Feel free to contribute to the project or report any bugs.
 - **Lucide Icons** for the simple and elegant icons used in the project.
 - **Tailwind CSS** for utility-first CSS styling.
 
----
-
-Make sure to replace the placeholder paths for images in the demo section with the actual paths to your screenshots!
