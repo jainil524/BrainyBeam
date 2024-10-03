@@ -38,37 +38,37 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (["",null,undefined," "].includes(name)) {
+        if (["", null, undefined, " "].includes(name)) {
             setNameError('Name is required');
-        }else{
+        } else {
             setNameError('');
         }
-        
-        if (["",null,undefined," "].includes(description)) {
+
+        if (["", null, undefined, " "].includes(description)) {
             setDescriptionError('Description is required');
-        } else{
+        } else {
             setDescriptionError('');
         }
 
-        if (["",null,undefined," "].includes(isagreementAccpeted)) {
+        if (["", null, undefined, " "].includes(isagreementAccpeted)) {
             setIsAgreementError('Please accept the terms');
-        } else{
+        } else {
             setIsAgreementError('');
         }
-        
-        if (["",null,undefined," "].includes(gender)) {
+
+        if (["", null, undefined, " "].includes(gender)) {
             setGenderError('Please select the gender');
-        }else{
+        } else {
             setGenderError('');
         }
-        
-        
-        if(nameError != null || descriptionError != null || isAgreementError != null || genderError != null){
+
+
+        if (nameError != null || descriptionError != null || isAgreementError != null || genderError != null) {
             return;
-        }else{
+        } else {
             alert("Form submitted successfully");
         }
-        
+
 
     }
 
@@ -95,15 +95,6 @@ const Form = () => {
                 required={true}
             />
             <Input
-                type="checkbox"
-                id="isChecked"
-                error={isAgreementError}
-                label="Accept Terms"
-                options={[{ value: 'accept', label: 'I accept the terms' }]}
-                checked={isagreementAccpeted}
-                onChange={(value) => handleChange('isChecked', value)}
-            />
-            <Input
                 type="radio"
                 id="gender"
                 name="gender"
@@ -116,6 +107,16 @@ const Form = () => {
                 checked={gender}
                 onChange={(value) => handleChange('gender', value)}
             />
+            <Input
+                type="checkbox"
+                id="isChecked"
+                error={isAgreementError}
+                label="Accept Terms"
+                options={[{ value: 'accept', label: 'I accept the terms' }]}
+                checked={isagreementAccpeted}
+                onChange={(value) => handleChange('isChecked', value)}
+            />
+
             <button type="submit">Submit</button>
         </form>
     );
