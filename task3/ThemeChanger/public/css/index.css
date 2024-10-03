@@ -1,0 +1,34 @@
+:root {
+  --color-toggle-light: #fff;
+  --color-toggle-dark: #333;
+  --color-toggle-light-border: #ccc;
+  --color-toggle-dark-border: #666;
+}
+
+/* In your global CSS */
+body.light {
+  --logo-bg-color: var(--color-toggle-light);
+  --bg-color: var(--color-toggle-light);
+  --text-color: var(--color-toggle-dark);
+  --border-color: var(--color-toggle-light-border);
+  --input-bg-color: var(--color-toggle-light);
+  --input-text-color: var(--color-toggle-dark);
+}
+
+body.dark {
+  --logo-bg-color: var(--color-toggle-light-border);
+  --bg-color: var(--color-toggle-dark);
+  --text-color: var(--color-toggle-light);
+  --border-color: var(--color-toggle-dark-border);
+  --input-bg-color: var(--color-toggle-dark);
+  --input-text-color: var(--color-toggle-light);
+}
+
+/* Apply these variables in your styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
