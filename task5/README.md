@@ -1,6 +1,10 @@
+Here’s an updated version of your README file with a section for demo UI images added. You can include images of the application interface in the provided space.
+
+---
+
 # 📁 Image Upload with Progress & Alert System
 
-# Tags
+## Tags
 - **React**
 - **Image Upload**
 - **File Preview**
@@ -11,11 +15,10 @@
 - **Tailwind CSS**
 - **React Dropzone**
 
-# Language
+## Language
 - **JavaScript**
 - **React.js**
 - **CSS (Tailwind CSS)**
-
 
 This project is a **React-based** image upload application that provides a user-friendly interface for dragging and dropping multiple images, tracking upload progress, and showing notifications for successful or failed uploads. The project also handles file size formatting and supports previewing images before uploading them.
 
@@ -58,6 +61,28 @@ npm start
 ```
 
 The app will run locally at `http://localhost:3000`.
+
+---
+
+## 📸 Demo UI
+
+### Here are some screenshots of the application in action:
+
+**1. Drag and Drop Interface:**
+
+![Drag and Drop Interface](https://github.com/jainil524/BrainyBeam/blob/main/task5/DragNDrop/public/img/1.jpg)
+
+**2. File Preview:**
+
+![File Preview](https://github.com/jainil524/BrainyBeam/blob/main/task5/DragNDrop/public/img/2.jpg)
+
+**3. Progress Bar Example:**
+
+![Progress Bar Example](https://github.com/jainil524/BrainyBeam/blob/main/task5/DragNDrop/public/img/3.jpg)
+
+**4. Success Alert:**
+
+![Success Alert](https://github.com/jainil524/BrainyBeam/blob/main/task5/DragNDrop/public/img/4.jpg)
 
 ---
 
@@ -207,7 +232,7 @@ The interface is designed using **Tailwind CSS** to provide a clean, responsive 
 - **Real API Integration**: Replace the simulated upload with actual API integration.
 - **Chunked Upload**: For large files, implement chunked uploads to ensure reliability.
 - **File Validation**: Add more detailed file validation (e.g., file types, size limits).
-  
+
 ---
 
 ## 📄 License
@@ -229,3 +254,7 @@ Feel free to contribute to the project or report any bugs.
 - **React Dropzone** for the drag-and-drop functionality.
 - **Lucide Icons** for the simple and elegant icons used in the project.
 - **Tailwind CSS** for utility-first CSS styling.
+
+---
+
+Make sure to replace the placeholder paths for images in the demo section with the actual paths to your screenshots!
