@@ -4,17 +4,21 @@ import Input from '../components/Input';
 import "/public/css/Form.css";
 
 const Form = () => {
-    const [name, setName] = useState('');
-    const [nameError, setNameError] = useState('');
+    const [name, setName] = useState(null);
+    const [nameError, setNameError] = useState(null);
 
-    const [description, setDescription] = useState('');
-    const [descriptionError, setDescriptionError] = useState('');
+    const [description, setDescription] = useState(null);
+    const [descriptionError, setDescriptionError] = useState(null);
 
-    const [isagreementAccpeted, setIsAgreementAccpeted] = useState('');
-    const [isAgreementError, setIsAgreementError] = useState('');
+    const [isagreementAccpeted, setIsAgreementAccpeted] = useState(null);
+    const [isAgreementError, setIsAgreementError] = useState(null);
 
-    const [gender, setGender] = useState('');
-    const [genderError, setGenderError] = useState('');
+    const [country, setCountry] = useState(null);
+    const [countryError, setCountryError] = useState(null);
+
+    const [gender, setGender] = useState(null);
+    const [genderError, setGenderError] = useState(null);
+
 
     const handleChange = (type, value) => {
         switch (type) {
@@ -63,7 +67,7 @@ const Form = () => {
         }
 
 
-        if (nameError != null || descriptionError != null || isAgreementError != null || genderError != null) {
+        if (nameError != null && descriptionError != null && isAgreementError != null && genderError != null && countryError != null) {
             return;
         } else {
             alert("Form submitted successfully");
@@ -93,6 +97,19 @@ const Form = () => {
                 placeholder="Enter description"
                 onChange={(value) => handleChange('description', value)}
                 required={true}
+            />
+            <Input
+                type="dropdown"
+                id="dropdown"
+                label="Select Country"
+                options={[
+                    { value: 'india', label: 'India' },
+                    { value: 'usa', label: 'USA' },
+                    { value: 'uk', label: 'UK' },
+                ]}
+                value={"Select Country"}
+                error={countryError}
+                onChange={(value) => handleChange('country', value)}
             />
             <Input
                 type="radio"

@@ -5,6 +5,7 @@ import TextBoxInput from './SharedInput/TextBoxInput';
 import TextAreaInput from './SharedInput/TextAreaInput';
 import CheckBoxInput from './SharedInput/CheckBoxInput';
 import RadioInput from './SharedInput/RadioInput';
+import Dropdown from './SharedInput/Dropdown';
 
 import "/public/css/Input.css";
 
@@ -27,6 +28,8 @@ function Input({ type, ...props }) {
             return <CheckBoxInput {...props} />;
         case 'radio':
             return <RadioInput {...props} />;
+        case 'dropdown':
+            return <Dropdown {...props} />;
         default:
             return null; // In case an unknown type is passed
     }
