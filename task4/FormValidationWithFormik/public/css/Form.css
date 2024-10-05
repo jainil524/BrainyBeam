@@ -1,0 +1,65 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+    font-family: "Aptos", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('/public/img/bgImg.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.app-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    color: white; 
+}
+
+
+.form-wrapper {
+    max-width: 500px; 
+    width: 100%; 
+    padding: 30px; 
+    background: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.form-wrapper form {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center; 
+    color: white; 
+}
+
+button[type="submit"] {
+    background-image: linear-gradient(-20deg, #12017e, #d50303);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 2s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+}
