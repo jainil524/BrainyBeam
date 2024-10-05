@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Calibri:wght@400;500;700&display=swap");
+
+.input-wrapper {
+  font-family: "Calibri", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Increased gap for better spacing */
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.input-wrapper label {
+  font-size: 1rem; /* Slightly larger font for better readability */
+  font-weight: 500;
+  margin-bottom: 0.3rem; /* Reduced margin to improve form layout */
+  color: #333; /* Darker label for better contrast */
+  user-select: none; /* Prevent text selection on labels */
+}
+
+/* .input-wrapper:has(input[type="checkbox"]){
+    flex-direction: row;
+} */
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  padding: 12px 15px; /* Added more padding for better touch targets */
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 8px; /* Softer corners for a modern feel */
+  outline: none;
+  font-size: 1rem; /* Consistent font size */
+  transition: all 0.3s ease; /* Smooth transition for hover/focus states */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus,
+.input-wrapper select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Enhanced focus effect */
+  background-color: #fff; /* Clean white background on focus */
+}
+
+.input-wrapper textarea {
+  resize: vertical; /* Allow resizing vertically only */
+  min-height: 120px; /* Default height for textarea */
+}
+
+.input-wrapper input[type="checkbox"],
+.input-wrapper input[type="radio"] {
+  width: auto; /* Default size for checkboxes and radios */
+  margin-right: 10px; /* Spacing between checkbox/radio and label */
+}
+
+.input-wrapper select {
+  appearance: none; /* Remove default select styles */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="none" stroke="%23666" d="M2 0L0 2h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Custom arrow for select */
+  background-size: 10px;
+} 
+
+.input-wrapper:has(.error) input,
+.input-wrapper:has(.error) textarea,
+.input-wrapper:has(.error) select {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.input-wrapper input.mandatory:focus {
+  background-color: #fff4f4; /* Indicating mandatory input focus */
+}
+
+.input-wrapper .error {
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.85rem; /* Slightly larger for readability */
+  color: red;
+  margin-top: 5px; /* Space between input and error message */
+}
+
+.input-wrapper:has(input:required, textarea:required, select:required)
+  label::after {
+  content: "*";
+  margin-left: 0.3rem;
+  color: red;
+  font-size: 1rem; /* Slightly larger asterisk */
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Hover effect for all inputs */
+.input-wrapper input:hover,
+.input-wrapper textarea:hover,
+.input-wrapper select:hover {
+  background-color: #f1f8ff; /* Light blue on hover */
+  border-color: #b6daff;
+}
+
+/* Improved button styling for form submission */
+.input-wrapper button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-wrapper :is(input[type="checkbox"], input[type="radio"]) {
+  accent-color: #008080;
+}
+
+.input-wrapper button:hover {
+  background-color: #0056b3;
+}

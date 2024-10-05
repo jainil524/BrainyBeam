@@ -1,4 +1,3 @@
-// Input.jsx
 import React from 'react';
 
 import TextBoxInput from './SharedInput/TextBoxInput';
@@ -8,8 +7,6 @@ import RadioInput from './SharedInput/RadioInput';
 import Dropdown from './SharedInput/Dropdown';
 
 import "/public/css/Input.css";
-
-
 
 /**
  * Input component acts as a central point of access for rendering 
@@ -29,14 +26,23 @@ import "/public/css/Input.css";
  * @returns {JSX.Element|null} - Renders the appropriate input component based on the type.
  */
 
-
 function Input({ type, ...props }) {
+    console.log("Type: ", type);
     switch (type) {
-        case 'text' || 'email' || 'password' || 'number' ||
-            'tel' || 'url' || 'search' || 'date' ||
-            'time' || 'datetime-local' || 'month' ||
-            'week' || 'color':
-            return <TextBoxInput {...props, type} />;
+        case 'text':
+        case 'email':
+        case 'password':
+        case 'number':
+        case 'tel':
+        case 'url':
+        case 'search':
+        case 'date':
+        case 'time':
+        case 'datetime-local':
+        case 'month':
+        case 'week':
+        case 'color':
+            return <TextBoxInput type={type} {...props} />;
         case 'textarea':
             return <TextAreaInput {...props} />;
         case 'checkbox':

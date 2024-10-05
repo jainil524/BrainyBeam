@@ -26,7 +26,7 @@ function CheckBoxInput({ id, name, label, value, checked, onChange, options, err
                         name={name}
                         value={option.value}
                         checked={checked === option.value}
-                        onChange={(e) => onChange(e.target.value)}
+                        onChange={onChange}
                         className={classes}
                         {...additionalProps}
                     />

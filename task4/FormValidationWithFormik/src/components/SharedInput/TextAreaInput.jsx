@@ -26,7 +26,7 @@ function TextAreaInput({ id, label, value, placeholder, onChange, error, classes
                 onChange={onChange}
                 {...additionalProps}
             />
-            {error && <span className="error">{error}</span>}
+            {[""," ",null,undefined].includes(error)==false && <span className="error">{error}</span>}
         </div>
     );
 }

@@ -34,7 +34,7 @@ function RadioInput({ id, name, label, value, checked, onChange, options, error,
                     <label htmlFor={`${id}_${option.value}`}>{option.label}</label>
                 </div>
             ))}
-            {error && <span className="error">{error}</span>}
+            {[""," ",null,undefined].includes(error)==false && <span className="error">{error}</span>}
         </div>
     );
 }
