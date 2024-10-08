@@ -29,13 +29,13 @@ To get started with the Theme Changer project, follow these simple steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/theme-changer.git
+   git clone https://github.com/jainil524/BrainyBeam.git
    ```
 
 2. **Navigate to the project directory**:
 
    ```bash
-   cd theme-changer
+   cd task3/ThemeChanger
    ```
 
 3. **Install dependencies**:
@@ -47,40 +47,16 @@ To get started with the Theme Changer project, follow these simple steps:
 4. **Start the application**:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-The application should now be running on [http://localhost:3000](http://localhost:3000).
+The application should now be running on [http://localhost:3000](http://localhost:5173).
 
 ## 🎨 Usage
 
 - Upon launching the application, you'll see the theme toggle button in the header.
 - Click the toggle button to switch between dark and light themes seamlessly.
 - The beautifully animated sun and moon icons will indicate the current theme, enhancing user interaction.
-
-## 📝 Example
-
-Here’s an example of how you can implement the theme toggle in your React component:
-
-```javascript
-import ThemeToggleButton from './ThemeToggleButton';
-
-const App = () => {
-    return (
-        <div>
-            <header>
-                <h1>Welcome to the Theme Changer App!</h1>
-                <ThemeToggleButton />
-            </header>
-            <main>
-                <p>Enjoy switching themes!</p>
-            </main>
-        </div>
-    );
-};
-
-export default App;
-```
 
 ## ⚡️ Contributing
 

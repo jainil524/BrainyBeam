@@ -34,8 +34,8 @@ This project is a **React-based** shared input component that provides a user-fr
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/shared-input-component.git
-cd shared-input-component
+git clone https://github.com/jainil524/BrainyBeam.git
+cd task2/SharedInputComponent
 ```
 
 ### 2. Install dependencies
@@ -47,10 +47,10 @@ npm install
 ### 3. Run the application
 
 ```bash
-npm start
+npm run dev
 ```
 
-The app will run locally at `http://localhost:3000`.
+The app will run locally at `http://localhost:5173`.
 
 ---
 
@@ -81,35 +81,6 @@ Main component that handles the various input types and validation.
 - Input fields can be rendered based on the provided type prop.
 - Validation rules are applied to ensure data integrity.
 - Error messages are displayed if validation fails.
-
-```js
-const SharedInput = ({ type, value, onChange, validate }) => {
-    const [error, setError] = useState('');
-
-    const handleChange = (e) => {
-        const { value } = e.target;
-        onChange(value);
-        
-        if (validate) {
-            const validationError = validate(value);
-            setError(validationError);
-        }
-    };
-
-    return (
-        <div className="mb-4">
-            <input
-                type={type}
-                value={value}
-                onChange={handleChange}
-                className={`border rounded p-2 ${error ? 'border-red-500' : 'border-gray-300'}`}
-            />
-            {error && <p className="text-red-500 text-sm">{error}</p>}
-        </div>
-    );
-};
-```
-
 ---
 
 ## 📊 Application Flow
